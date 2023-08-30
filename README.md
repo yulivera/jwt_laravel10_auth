@@ -29,6 +29,21 @@ https://jwt-auth.readthedocs.io/en/develop/laravel-installation/
 | `password` | `string` | **Required**. Your password user |
 | `password_confirmation` | `string` | **Required**. Your password confirm user |
 
+#### Response register
+
+```
+{
+    "user": {
+        "name": "segunda",
+        "email": "segunda@gmail.com",
+        "updated_at": "2023-08-30T20:42:50.000000Z",
+        "created_at": "2023-08-30T20:42:50.000000Z",
+        "id": 2
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciO"
+}
+```
+
 #### Post Login
 
 ```http
@@ -51,7 +66,6 @@ Token JWT.
 ``` 
 
 
-
 ## Deployment
 
 To deploy this project run
@@ -59,12 +73,6 @@ To deploy this project run
 ```bash
   php artisan serve
 ```
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 
 ## Tech Stack
 
@@ -89,19 +97,6 @@ Go to the project directory
 ```bash
   cd my-project
 ```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
 
 ## Documentation
 
